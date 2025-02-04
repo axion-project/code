@@ -1,0 +1,9 @@
+@media (max-width: 640px) { /* Adjusted for typical mobile screens */
+  #nextjs-app {
+    display: flex;
+    flex-direction: column;
+  }
+  #nextjs-app > * {
+    flex: 1;
+  }
+}
