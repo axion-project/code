@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>APAC GOLD</title>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Arial+Rounded+MT:wght@400');
+ body {
+ font-family: 'Arial Rounded MT';
+ color: #fff;
+ background-color: #01a4d5; // Background Colour **
+ overflow-x: hidden;
+ margin: 0;
+ padding: 0;
+ /* High Definition */
+ image-rendering: -webkit-optimize-contrast;
+ }
+ header {
+ background-color: #01a4d5; // Menue Bar Colour (#0580ba) **
+ height: 1.5cm;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 0 15px;
+ }
+ nav {
+ display: flex;
+ align-items: center;
+ width: 100%;
+ justify-content: left;
+ padding: 0 15px;
+ }
+ nav a {
+ margin-left: 15px;
+ text-decoration: none;
+ color: #fff;
+ font-size: 15px;
+ padding: 0 10px
+ }
+ main {
+ padding: 20px;
+ text-align: center;
+ position: relative;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ overflow: hidden;
+ }
+ .logo-container {
+ margin-bottom: 10px;
+ }
+ .logo-container img {
+width: 400px; // * Logo Width **
+ }
+ .logo-container p {
+ margin: 0;
+ font-size: 1.5em;
+ }
+ .services {
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+ flex-wrap: wrap;
+ padding-bottom: 40px;
+ }
+ .service {
+ background-color: rgba(1, 164, 213, 0.8);
+ padding: 10px;
+ width: 200px;
+ color: #fff;
+ border: 1px solid #ddd;
+ text-align: center;
+ }
+ .service img {
+ height: 100px;
+ }
+ .service h2 {
+ font-size: 1.5em;
+ }
+ .service a {
+ text-decoration: none;
+ color: #fff;
+ }
+ footer {
+ background-color: #01a4d5;
+ padding: 40px;
+ text-align: center;
+ margin-top: 40px;
+ }
+ footer a {
+ text-decoration: none;
+ color: #fff;
+ margin-right: 15px;
+ font-size: 15px;
+ }
+ .particles {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: -1;
+ }
+ @media (max-width: 640px) {
+ header {
+ flex-direction: column;
+ align-items: center;
+ }
+nav {
+ flex-direction: column;
+ align-items: center;
+ }
+ .services {
+ flex-direction: column;
+ align-items: center;
+ }
+ .service {
+ width: 100%; /* Take full width of small screen */
+ }
+ .logo-container img {
+ width: 100%; /* Take full width of small screen */
+ }
+ .logo-container p {
+ font-size: 1em;
+ }
+ }
+ @media (max-width: 64px) {
+ header {
+ flex-direction: column;
+ align-items: center;
+ }
+ nav {
+ flex-direction: column;
+ align-items: center;
+ }
+ main {
+ padding: 20px;
+ }
+ .services {
+ flex-direction: column;
+ align-items: center;
+ }
+ .service {
+ width: 100%; /* Take full width of small screen */
+ }
+ .logo-container img {
+ width: 100%; /* Take full width of small screen */
+ }
+ .logo-container p {
+ font-size: 1.5em;
+ }
+ }
+ </style>
+ <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+ <header>
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">Services</a>
+ <a href="#">FAQ</a>
+ <a href="#">Reviews</a>
+ <a href="#">Contact</a>
+ <a href="#">Resources</a>
+ <a href="#">App</a>
+ </nav>
+ </header>
+ <main>
+ <div class="logo-container">
+ <img src="https://anai-oz7xiak6x6ryujfuqoq9-assets.s3.ap-southeast-2.amazonaws.com/
+dYmc7BurD8q6SHHr2pu5.png" alt="APAC Health Logo">
+ <p>Trust Transparency Performance</p>
+ </div>
+<div class="services">
+ <div class="service">
+ <a href="https://apac.app/Q&A">
+ <img src="https://anai-oz7xiak6x6ryujfuqoq9-assets.s3.ap-southeast-2.amazonaws.com/
+p3thMOb90Gdy15Qdmmcc.png" alt="Ask a Question">
+ <h2>Ask a Question</h2>
+ </a>
+ </div>
+ <div class="service">
+ <a href="https://apac.app/po">
+ <img src="https://anai-oz7xiak6x6ryujfuqoq9-assets.s3.ap-southeast-2.amazonaws.com/
+lAy4UfFroKIYroLLcJ48.png" alt="Purchase Order">
+ <h2>Purchase Order</h2>
+ </a>
+ </div>
+ <div class="service">
+ <a href="https://apac.app/track">
+ <img src="https://anai-oz7xiak6x6ryujfuqoq9-assets.s3.ap-southeast-2.amazonaws.com/
+U81wPKcNyhNWTyxH6CWu.png" alt="Track Order">
+ <h2>Track Order</h2>
+ </a>
+ </div>
+ <div class="service">
+ <a href="https://apac.app/info">
+ <img src="https://anai-oz7xiak6x6ryujfuqoq9-assets.s3.ap-southeast-2.amazonaws.com/
+xKSiQCRjYtBIWY0sKzbc.png" alt="Information">
+ <h2>Information</h2>
+ </a>
+ </div>
+ <div class="service">
+ <a href="https://apac.app/report">
+ <img src="https://anai-oz7xiak6x6ryujfuqoq9-assets.s3.ap-southeast-2.amazonaws.com/
+6I0GEIQbqTkUE8Rx4Cvg.png" alt="Solve a Problem">
+ <h2>Solve a Problem</h2>
+ </a>
+ </div>
+ </div>
+ <div id="particles-js" class="particles"></div>
+ </main>
+ 
+ <footer>
+ <p>&copy; 2024 APAC GOLD LTD</p>
+ <a href="#">Privacy Policy</a>
+ <a href="#">Terms and Conditions</a>
+ </footer>
+</body>
+</html>
+<script>
+ particlesJS("particles-js", {
+ "particles": {
+ "number": {
+ "value": 100,
+ "density": {
+ "enable": true,
+ "value_area": 800
+ }
+ },
+ "color": {
+ "value": "#ffffff"
+ },
+ "shape": {
+ "type": "circle",
+ "stroke": {
+ "width": 0,
+ "color": "#000000"
+ },
+ "polygon": {
+"nb_sides": 5
+ },
+ "image": {
+ "src": "img/github.svg",
+ "width": 100,
+ "height": 100
+ }
+ },
+ "opacity": {
+ "value": 0.5,
+ "random": false,
+ "anim": {
+ "enable": false,
+ "speed": 1,
+ "opacity_min": 0.1,
+ "sync": false
+ }
+ },
+ "size": {
+ "value": 3,
+ "random": true,
+ "anim": {
+ "enable": false,
+ "speed": 40,
+ "size_min": 0.1,
+ "sync": false
+ }
+ },
+ "line_linked": {
+ "enable": false // Disable connecting lines
+ },
+ "move": {
+ "enable": true,
+ "speed": 1.6, // 40% slower
+ "direction": "none",
+ "random": false,
+ "straight": false,
+ "out_mode": "out",
+ "bounce": false,
+ "attract": {
+ "enable": false,
+ "rotateX": 600,
+ "rotateY": 1200
+ }
+ }
+ },
+ "interactivity": {
+ "detect_on": "canvas",
+ "events": {
+ "onhover": {
+ "enable": true,
+ "mode": "repulse" // Particles repel from the mouse
+ },
+ "onclick": {
+ "enable": true,
+ "mode": "push"
+ },
+ "resize": true
+ },
+ "modes": {
+ "grab": {
+ "distance": 400,
+ "line_linked": {
+ "opacity": 1
+ }
+ },
+ "bubble": {
+"distance": 400,
+ "size": 40,
+ "duration": 2,
+ "opacity": 8,
+ "speed": 3
+ },
+ "repulse": {
+ "distance": 200,
+ "duration": 0.4
+ },
+ "push": {
+ "particles_nb": 4
+ },
+ "remove": {
+ "particles_nb": 2
+ }
+ }
+ },
+ "retina_detect": true
+ });
+</script>
