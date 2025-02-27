@@ -1,0 +1,259 @@
+/*
+Theme Name: APAC-Gold
+Theme URI: https://apac.app/
+Author: APAC GOLD
+Author URI: https://apac.app/
+Description: Custom WordPress theme for APAC GOLD
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: apac-gold
+Tags: blue, responsive, business
+*/
+
+body {
+    font-family: 'Arial Rounded MT', Arial, sans-serif;
+    color: #fff;
+    background-color: #01a4d5; /* Background Color */
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    /* High Definition */
+    image-rendering: -webkit-optimize-contrast;
+}
+
+header {
+    background-color: #01a4d5; /* Menu Bar Color (#0580ba) */
+    height: 1.5cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    padding: 0 15px;
+}
+
+nav a, .main-menu a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    width: 400px; /* Logo Width */
+}
+
+.logo-container p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.service {
+    background-color: rgba(1, 164, 213, 0.8);
+    padding: 10px;
+    width: 200px;
+    color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.service img {
+    height: 100px;
+}
+
+.service h2 {
+    font-size: 1.5em;
+}
+
+.service a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #01a4d5;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a, .footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.footer-menu {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Standard WordPress Classes */
+.wp-caption {
+    max-width: 100%;
+}
+
+.wp-caption-text {
+    text-align: center;
+    font-style: italic;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav, .main-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service {
+        width: 100%; /* Take full width of small screen */
+    }
+    
+    .logo-container img {
+        width: 100%; /* Take full width of small screen */
+    }
+    
+    .logo-container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 64px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav, .main-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service {
+        width: 100%; /* Take full width of small screen */
+    }
+    
+    .logo-container img {
+        width: 100%; /* Take full width of small screen */
+    }
+    
+    .logo-container p {
+        font-size: 1.5em;
+    }
+}
